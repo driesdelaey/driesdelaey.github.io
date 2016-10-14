@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Dries Delaey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Smart, Smarter, Too Smart</title>
+	
+	<link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63934531-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<article>
+
+	<h1>Smart, Smarter, too Smart?</h1>
+	<time datetime="2015-12-7T00:00:00+00:00">8 December, 2015</time>
+	<p>Dit is geen post of je dan wel Photoshop, Sketch of in de browser moet designen. Gebruik waar je je goed bij voelt, durf ook eens iets nieuws te proberen, maar blijf vooral nadenken over wat je doet. <em>Tools don't matter</em> (klinkt goed in theorie, maar ook ik twijfel toch steeds weer om Sketch nog eens een kans te geven, of waarom ik nog steeds niet méteen efficiënt én rendabel in html&css begin ontwerpen. En dan heb ik het nog niet over animaties en interactie.<!-- Of beter nog communicatie, naar de klant, de sales, development-collega's--> Design is a job, a tough job - maar wel een hele leuke). </p>
+
+	<p>Waar ik het even over wou hebben: Layer Comps <strong>in</strong> Vector Smart Object. Een handig trucje die ik onlangs heb gelezen in een <a href="http://veerle.duoh.com/design/article/the_design_process_of_the_carenzorgt_web_site">blogpost</a> van <a href="https://twitter.com/vpieters">Veerle Pieters</a>. Iets wat blijkbaar wel al even kon, maar ik had het nog nooit gebruikt. Daarom wou ik het nu graag even proberen.</p>
+
+	<p>Stel je hebt een pagina opgemaakt, je zet in de navigatie op netjes het correcte item in de een active state. Klaar. Wat later moet je nog een andere pagina opmaken (beter is uiteraard niet alle pagina's op te maken, maar wel een <a href="http://atomicdesign.bradfrost.com/table-of-contents/">systeem en patronen</a> te ontwerpen, al dan niet in combinatie met een <a href="http://styleguides.io/">styleguide</a> - we're working on it). Maak van alle lagen die je navigatie inhouden een Smart Object. Bewerk je Smart Object en maak van de initiële weergave een Layer Comp 'Home', verander vervolgens het actieve navigatie-item, en maak een nieuwe Layer Comp 'News' aan. Sluit je Smart Object.</p>
+
+	<div class="imagery">
+		<img src="images/smart-objects.jpg" />
+	</div>
+
+	<p>Het handigheidje zit hem in het <strong>Properties panel</strong> als je je Smart Object selecteer in je lagenpallet. Daar kan je dus kiezen welke Layer Comp je weergeeft. Best handig! Zeker als je dat dan weer combineert met de Layercomps in je originele document om je pagina op te bouwen. Wijziging? 1 klik voor je Layer Comp, 2 kliks voor je Layer Comp van je navigatie, aanpassing uitvoeren en exporteren maar. Er zijn ongetwijfeld nog veel efficiëntere toepassingen hiervan. Die ontdek ik nog wel.</p>
+
+	<p>Tegelijkertijd even verder gekeken naar naar het Properties Panel van een Smart Object, blijkt dat je er ook een Linked Object ipv Embedded kan maken. En dit zou wel eens het probleem op van 'bloated' photoshop documenten kunnen oplossen. Want voor dit project maakte ik alle dus pagina's op in 1 psd. Qua filesize valt dat best mee, maar het document wordt héél log en laadt zo mogelijk nog trager in (ik vermoed door het gigantisch aantal lagen?). Dus volgende keer probeer ik van elke pagina een Linked Smart Object te maken. Maar misschien ook niet, wie weet is het volgende project wel in Sketch :-).</p>
+
+	<p>Eigenlijk had ik moeten weten dat dit kan, want deze functie gebruik ik al jaren in InDesign bij het plaatsen van een Photoshop document. En Adobe probeert toch altijd de handigheidjes van 1 tool naar de andere over te brengen. Ooit wordt gans Adobe CC gewoon 1 app. Een monster van een app.</p>
+
+	<p>Oja, als je een betere uitleg wil: Veerle geeft je de uitleg, <a href="http://veerle.duoh.com/design/article/using_linked_smartobjects_in_combination_with_layercomps_in_photoshop_cc"><em>as it should be</em></a>.
+
+	
+	
+
+
+</article>
+
+
+</body>
+</html>

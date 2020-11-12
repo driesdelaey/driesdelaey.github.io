@@ -1,15 +1,81 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
 
+:root {
+  --background-color: #fff;
+  --text-color: #223;
+  --light-color: #999;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	  --background-color: #222;
+	  --text-color: #dde;
+	  --light-color: #777;
+	}
+}
+
 body {
 	font-family: 'PT Serif', serif;
 	font-size: 112.5%;
-	line-height: 1.7em;
-	color: #223;
+	line-height: 1.65em;
+	background-color: var(--background-color);
+  	color: var(--text-color);
+	margin: .7em;
 }
 
+h1, h2 {
+	line-height: 1.65em;
+}
+
+.container,
+section,
+article,
+footer {
+	max-width: 90%;
+	margin: 0 0 0 1.4em;
+}
+@media (min-width: 468px) {
+	.container,
+	section,
+	article,
+	footer {
+		margin: 0 0 0 2em;
+	}
+}
+@media (min-width: 768px) {
+	.container,
+	section,
+	article,
+	footer {
+		max-width: 36em;
+	}
+}
+
+.profile {
+	display: block;
+	width: 80%;
+	margin: -3em auto 2em auto;
+	text-align: right;
+  	color: var(--light-color);
+}
+.profile p {
+	margin-right: 2em;
+}
+
+@media (min-width: 568px) {
+	.profile {
+		float: right;
+		width: 40%;
+		margin-top: -4em;
+		margin-left: 2em;
+	}
+}
+
+section,
 article {
-	max-width: 36em;
-	margin: 0 auto;
+	margin-top: 5em;
+	margin-bottom: 2.5em;
 }
 
 time {
@@ -23,6 +89,61 @@ img {
 a {
 	color: inherit;
 	text-decoration: none;
-	border-bottom: 1px dotted #999;
+	border-bottom: 1px solid var(--light-color);
 	padding-bottom: .1em;
+}
+a::after {
+	/*content: '→';*/
+}
+a:hover {
+	color: var(--light-color);
+}
+
+footer {
+	margin-top: 5em;
+	opacity: .2;
+}
+
+
+/* HERO */
+.hero {
+	padding-top: 2.5em;
+	padding-bottom: 4em;
+	background-color: #ff00ff;
+	  -o-animation: colorcycle 20s infinite;
+	  -moz-animation: colorcycle20s infinite;
+	  -webkit-animation: colorcycle 20s infinite;
+	  animation: colorcycle 20s infinite; 
+}
+
+@-o-keyframes colorcycle {
+  0%   {background: #00aeff;}
+  25%  {background: #a24de3;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #00aeff;}
+}
+
+@-moz-keyframes colorcycle {
+  0%   {background: #00aeff;}
+  25%  {background: #a24de3;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #00aeff;}
+}
+
+@-webkit-keyframes colorcycle {
+  0%   {background: #00aeff;}
+  25%  {background: #a24de3;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #00aeff;}
+}
+
+@keyframes colorcycle {
+  0%   {background: #00aeff;}
+  25%  {background: #a24de3;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #00aeff;}
 }

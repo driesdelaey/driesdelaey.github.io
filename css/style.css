@@ -99,6 +99,7 @@ a::after {
 }
 a:hover {
 	color: #4fd1cd;
+	border-color: #4fd1cd;
 }
 
 footer {

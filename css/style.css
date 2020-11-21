@@ -100,7 +100,10 @@ a:hover {
 	color: #4fd1cd;
 	border-color: #4fd1cd;
 }
-
+.fa {
+	font-size: .8em;
+	margin-right: .2em;
+}
 footer {
 	margin-top: 5em;
 }

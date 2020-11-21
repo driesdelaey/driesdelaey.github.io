@@ -107,6 +107,8 @@ footer {
 }
 footer a {
 	color: #00aeff;	
+	border-color: #00aeff;
+	margin-right: .5em;
 }
 footer a:hover {
 }

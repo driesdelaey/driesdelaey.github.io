@@ -91,17 +91,22 @@ a {
 	text-decoration: none;
 	border-bottom: 1px solid var(--light-color);
 	padding-bottom: .1em;
+   	transition:color .2s ease-in;
 }
 a::after {
 	/*content: '→';*/
 }
 a:hover {
-	color: var(--light-color);
+	color: #4fd1cd;
 }
 
 footer {
 	margin-top: 5em;
-	opacity: .2;
+}
+footer a {
+	color: #00aeff;	
+}
+footer a:hover {
 }
 
 
@@ -110,34 +115,7 @@ footer {
 	padding-top: 2.5em;
 	padding-bottom: 4em;
 	background-color: #ff00ff;
-	  -o-animation: colorcycle 20s infinite;
-	  -moz-animation: colorcycle20s infinite;
-	  -webkit-animation: colorcycle 20s infinite;
-	  animation: colorcycle 20s infinite; 
-}
-
-@-o-keyframes colorcycle {
-  0%   {background: #00aeff;}
-  25%  {background: #a24de3;}
-  50%  {background: #f45a4a;}
-  75%  {background: #4fd1cd;}
-  100% {background: #00aeff;}
-}
-
-@-moz-keyframes colorcycle {
-  0%   {background: #00aeff;}
-  25%  {background: #a24de3;}
-  50%  {background: #f45a4a;}
-  75%  {background: #4fd1cd;}
-  100% {background: #00aeff;}
-}
-
-@-webkit-keyframes colorcycle {
-  0%   {background: #00aeff;}
-  25%  {background: #a24de3;}
-  50%  {background: #f45a4a;}
-  75%  {background: #4fd1cd;}
-  100% {background: #00aeff;}
+	animation: colorcycle 20s infinite; 
 }
 
 @keyframes colorcycle {

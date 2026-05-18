@@ -79,15 +79,7 @@ article {
 }
 
 .cta {
-	animation: fontcolorcycle 16s infinite; 
-}
-
-@keyframes fontcolorcycle {
-  0%   {color: #00aeff;}
-  25%  {color: #a24de3;}
-  50%  {color: #f45a4a;}
-  75%  {color: #4fd1cd;}
-  100% {color: #00aeff;}
+	color: #00aeff;
 }
 
 time {
